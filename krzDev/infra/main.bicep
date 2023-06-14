@@ -128,6 +128,7 @@ var baseTags = {
   Umgebung: 'DevTest'
   Kunde: 'OWL-IT'
   Service: 'KI_OpenAI_Chat-GPT' 
+  'Kostenträger': 'P8577'
 }
 
 var updatedTags = union(empty(tags) ? {} : base64ToJson(tags), baseTags)
