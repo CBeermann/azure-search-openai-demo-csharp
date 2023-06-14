@@ -123,7 +123,13 @@ param webImageName string = ''
 var abbrs = loadJsonContent('./abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
 
-var baseTags = { 'azd-env-name': environmentName }
+var baseTags = { 
+  'azd-env-name': environmentName 
+  Umgebung: 'DevTest'
+  Kunde: 'OWL-IT'
+  Service: 'KI_OpenAI_Chat-GPT' 
+}
+
 var updatedTags = union(empty(tags) ? {} : base64ToJson(tags), baseTags)
 
 // Organize resources in a resource group
