@@ -13,5 +13,6 @@
     },
     "search.exclude": {
         "static": true
-    }
+    },
+    "dotnet.defaultSolution": "krzDev/app/app.sln"
 }
